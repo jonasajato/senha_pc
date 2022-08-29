@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Senha_PC {
+    public static void main(String[] args) {
+        //Escreva um procedimento/função que desligue o computador de acordo com uma senha passada
+        //como parametro se a senha for igual a 1234.
+        System.out.println("Digite a senha de seguranca: ");
+        int senha = 1234;
+        Scanner entrada = new Scanner(System.in);
+        senha = entrada.nextInt();
+        if (senha == 1234){
+            System.out.println("Senha correta, o computador sera desligado.");
+        }else {
+            System.out.println("Senha incorreta, aplicacao encerrada.");
+        }
+
+    }
+}
